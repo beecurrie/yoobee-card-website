@@ -1,0 +1,113 @@
+body, html {
+  height: 100%;
+}
+
+
+/* ====== Navigation CSS BEGIN ====== */
+.container-nav {
+  height: 10%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  background-color: #85deb6;
+
+}
+
+.item-1 {
+  width: 150px;
+  background-color: rgb(151, 149, 231);
+}
+
+.item-2 {
+  flex-grow: 1; /* Set the middle element to grow and stretch */
+}
+
+.item-3 {
+  width: 150px;
+  background-color: rgb(151, 149, 231);
+}
+
+.item + .item {
+  margin-left: 2%;
+}
+
+/* ====== Navigation CSS END ====== */
+
+/* ====== Content Container CSS START ====== */
+
+.container-content {
+  height: 84%;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+/* ====== Content Container CSS SEND ====== */
+
+/* ====== Map Container CSS START ====== */
+
+.container-map {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 49%;
+  background-color: #f27fa5;
+}
+
+.item-center {
+  width: 50%;
+  height: 25%;
+  background-color: #b45a75;
+}
+
+/* ====== Map Container CSS END ====== */
+
+/* ====== Promo/Services CSS START ====== */
+
+.container-promo {
+  width: 49%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #edba8e;
+}
+
+.item-4 {
+  margin: 20px;
+  height: 25%;
+  width: 100%;
+  background-color: #f7deac;
+}
+
+.service-1 {
+  margin: 20px 15px 20px 30px;
+  height: 30%;
+  width: 40%;
+  background-color: #f7deac;
+}
+
+.service-2 {
+  margin: 20px 30px 20px 15px;
+  height: 30%;
+  width: 40%;
+  background-color: #f7deac;
+}
+
+.service-3 {
+  margin: 20px 15px 30px 30px;
+  height: 30%;
+  width: 40%;
+  background-color: #f7deac;
+}
+
+.service-4 {
+  margin: 20px 30px 30px 15px;
+  height: 30%;
+  width: 40%;
+  background-color: #f7deac;
+}
+
+/* ====== Promo/Services CSS END ====== */
