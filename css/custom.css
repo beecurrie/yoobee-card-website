@@ -2,6 +2,10 @@ body, html {
   height: 100%;
 }
 
+body {
+  background-image: url("../img/bg.png");
+}
+
 
 /* ====== Navigation CSS BEGIN ====== */
 .container-nav {
@@ -14,8 +18,12 @@ body, html {
 }
 
 .item-1 {
+  display: flex;
   width: 150px;
-  background-color: rgb(151, 149, 231);
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .item-2 {
@@ -23,8 +31,12 @@ body, html {
 }
 
 .item-3 {
+  display: flex;
   width: 150px;
-  background-color: rgb(151, 149, 231);
+  font-size: 70px;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .item + .item {
@@ -36,7 +48,7 @@ body, html {
 /* ====== Content Container CSS START ====== */
 
 .container-content {
-  height: 84%;
+  height: 90%;
   padding: 30px;
   display: flex;
   justify-content: space-between;
@@ -53,13 +65,21 @@ body, html {
   align-items: center;
   justify-content: center;
   width: 49%;
-  background-color: #f27fa5;
+  background-color: #fff;
+  background: url(../img/campus.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
+
+
 
 .item-center {
   width: 50%;
   height: 25%;
-  background-color: #b45a75;
+  z-index: 1;
+
 }
 
 /* ====== Map Container CSS END ====== */
@@ -67,12 +87,23 @@ body, html {
 /* ====== Promo/Services CSS START ====== */
 
 .container-promo {
+  overflow: hidden;
   width: 49%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #edba8e;
+  background-color: #fff;
+}
+
+.promo {
+    background-image: url("../img/food-promo.jpeg");
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.promo .btn {
+  z-index: 16;
 }
 
 .item-4 {
@@ -80,34 +111,135 @@ body, html {
   height: 25%;
   width: 100%;
   background-color: #f7deac;
+  position: relative;
+}
+
+.item-4 .btn {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.item-4 img {
+  width: 100%;
 }
 
 .service-1 {
   margin: 20px 15px 20px 30px;
   height: 30%;
   width: 40%;
-  background-color: #f7deac;
+  background-color: #fff;
+  position: relative;
+}
+
+.service-1 .btn {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 16;
+}
+
+.service-1 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+.cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(255,255,255, 0.5);
+  z-index: 15;
+    border-radius: 25px;
 }
 
 .service-2 {
   margin: 20px 30px 20px 15px;
   height: 30%;
   width: 40%;
-  background-color: #f7deac;
+  background-color: #fff;
+  position: relative;
+}
+
+.service-2 .btn {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 16;
+}
+
+.service-2 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 .service-3 {
   margin: 20px 15px 30px 30px;
   height: 30%;
   width: 40%;
-  background-color: #f7deac;
+  background-color: #fff;
+  position: relative;
+}
+
+.service-3 .btn {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+    z-index: 16;
+}
+
+.service-3 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 .service-4 {
   margin: 20px 30px 30px 15px;
   height: 30%;
   width: 40%;
-  background-color: #f7deac;
+  background-color: #fff;
+  position: relative;
+}
+
+.service-4 .btn {
+  font-size: 50px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 16;
+}
+
+.service-4 img {
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
 }
 
 /* ====== Promo/Services CSS END ====== */
