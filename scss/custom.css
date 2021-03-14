@@ -1,144 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 body, html {
-  height: 100%;
-}
+  height: 100%; }
 
 body {
-  background-image: url("../img/bg.png");
-}
+  background-image: url("../img/bg.jpg"); }
 
-
-/* ====== Navigation CSS BEGIN ====== */
+/* ====== Navigation CSS BEGIN ===== */
 .container-nav {
-  height: 10%;
+  height: 8%;
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
-  background-color: #4d4d4d;
-
-}
+  justify-content: space-between; }
 
 .item-1 {
   display: flex;
   width: 150px;
-  font-size: 70px;
+  font-size: 50px;
   justify-content: center;
   align-items: center;
-  color: white;
-}
+  color: white; }
 
 .item-2 {
-  flex-grow: 1; /* Set the middle element to grow and stretch */
-}
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  align-items: center; }
+
+.item-2 img {
+  height: 50%;
+  width: 10%; }
 
 .item-3 {
   display: flex;
   width: 150px;
-  font-size: 70px;
+  font-size: 50px;
   justify-content: center;
   align-items: center;
-  color: white;
-}
+  color: white; }
 
 .item + .item {
-  margin-left: 2%;
-}
+  margin-left: 2%; }
 
 /* ====== Navigation CSS END ====== */
-
 /* ====== Content Container CSS START ====== */
-
 .container-content {
-  height: 90%;
-  padding: 30px;
+  height: 93%;
+  padding: 20px;
   display: flex;
   justify-content: space-between;
-  flex-wrap: nowrap;
-}
+  flex-wrap: nowrap; }
 
 /* ====== Content Container CSS SEND ====== */
-
 /* ====== Map Container CSS START ====== */
-
 .container-map {
   height: 100%;
+  border-radius: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 49%;
   background-color: #fff;
-  background: url(../img/campus.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
+  background: url(../img/campus.jpg);
+  background-repeat: no-repeat;
+  background-size: 110% 100%; }
 
+.container-map h1 {
+  height: 10%;
+  width: 100%;
+  background-color: #fff;
+  opacity: 0.8;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-family: 'Bebas Neue', cursive;
+  color: #170721;
+  font-size: 80px; }
 
-
-.item-center {
+.campus-select {
+  margin: 10px;
   width: 50%;
-  height: 25%;
-  z-index: 1;
-
-}
+  margin-left: 150px;
+  height: 20%;
+  border-radius: 30px;
+  font-size: 30px;
+  opacity: 0.9; }
 
 /* ====== Map Container CSS END ====== */
-
 /* ====== Promo/Services CSS START ====== */
-
 .container-promo {
   overflow: hidden;
+  border-radius: 20px;
   width: 49%;
   height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #fff;
-}
+  background-color: #fff; }
 
 .promo {
-    background-image: url("../img/food-promo.jpeg");
-    overflow: hidden;
-    border-radius: 25px;
-}
+  background-image: url("../img/food-promo.jpeg");
+  overflow: hidden;
+  border-radius: 25px; }
 
 .promo .btn {
-  z-index: 16;
-}
+  z-index: 16; }
 
 .item-4 {
   margin: 20px;
   height: 25%;
   width: 100%;
   background-color: #f7deac;
-  position: relative;
-}
+  position: relative; }
 
 .item-4 .btn {
   font-size: 50px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   top: 50%;
-  transform: translateY(-50%);
-}
+  transform: translateY(-50%); }
 
 .item-4 img {
-  width: 100%;
-}
+  width: 100%; }
 
 .service-1 {
   margin: 20px 15px 20px 30px;
   height: 30%;
   width: 40%;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
 .service-1 .btn {
   font-size: 50px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   right: 0;
@@ -146,34 +144,31 @@ body {
   margin-right: auto;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 16;
-}
+  z-index: 16; }
 
 .service-1 img {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-}
+  border-radius: 25px; }
 
 .cover {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-color: rgb(255,255,255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
   z-index: 15;
-    border-radius: 25px;
-}
+  border-radius: 25px; }
 
 .service-2 {
   margin: 20px 30px 20px 15px;
   height: 30%;
   width: 40%;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
 .service-2 .btn {
   font-size: 50px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   right: 0;
@@ -181,25 +176,23 @@ body {
   margin-right: auto;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 16;
-}
+  z-index: 16; }
 
 .service-2 img {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-}
+  border-radius: 25px; }
 
 .service-3 {
   margin: 20px 15px 30px 30px;
   height: 30%;
   width: 40%;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
 .service-3 .btn {
   font-size: 50px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   right: 0;
@@ -207,25 +200,23 @@ body {
   margin-right: auto;
   top: 50%;
   transform: translateY(-50%);
-    z-index: 16;
-}
+  z-index: 16; }
 
 .service-3 img {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-}
+  border-radius: 25px; }
 
 .service-4 {
   margin: 20px 30px 30px 15px;
   height: 30%;
   width: 40%;
   background-color: #fff;
-  position: relative;
-}
+  position: relative; }
 
 .service-4 .btn {
   font-size: 50px;
+  border-radius: 20px;
   position: absolute;
   left: 0;
   right: 0;
@@ -233,13 +224,18 @@ body {
   margin-right: auto;
   top: 50%;
   transform: translateY(-50%);
-  z-index: 16;
-}
+  z-index: 16; }
 
 .service-4 img {
   width: 100%;
   height: 100%;
-  border-radius: 25px;
-}
+  border-radius: 25px; }
+
+.btn-info {
+  color: #ffffff;
+  background-color: #10061E;
+  border-color: #10061E; }
 
 /* ====== Promo/Services CSS END ====== */
+
+/*# sourceMappingURL=custom.css.map */

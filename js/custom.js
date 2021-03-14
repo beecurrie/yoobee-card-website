@@ -1,3 +1,11 @@
 $(document).ready(function() {
-    $('.js-example-basic-single').select2();
+    $('.campus-select').select2();
 });
+
+
+// FIX THIS VVVVVVVVVV
+// $('document').ready(function(){
+//   $('#btn').click(function(){
+//     $('.service-1').addClass('spin-time');
+//   });
+// });
